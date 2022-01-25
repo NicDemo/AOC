@@ -23,7 +23,7 @@ public class Canal implements CapteurAsync, ObserverDeCapteurAsync {
 
     @Override
     public Future<Integer> getValue() {
-        return (Future<Integer>) scheduler.schedule(() ->{ return this.capteur.getValue();},
+        return scheduler.schedule(() -> this.capteur.getValue(),
                 (long)(Math.random()*DELAY_UNIT+DELAY_UNIT), TimeUnit.MILLISECONDS);
     }
 

@@ -11,11 +11,11 @@ public class CapteurImpl implements Capteur {
 
     private final static int START_VALUE = 1;
 
-    private List<ObserverDeCapteurAsync> canaux = new ArrayList<>() {};
+    private List<ObserverDeCapteurAsync> canaux = new ArrayList<>() {
+    };
     private AlgoDiffusion algoDiffusion;
-    private Integer value 		= Integer.valueOf(START_VALUE);
-    private Integer savedValue 	= Integer.valueOf(START_VALUE);
-
+    private Integer value = Integer.valueOf(START_VALUE);
+    private Integer savedValue = Integer.valueOf(START_VALUE);
 
 
     public CapteurImpl(AlgoDiffusion algo) {
@@ -64,9 +64,15 @@ public class CapteurImpl implements Capteur {
         return this.canaux;
     }
 
+    /**
+     *
+     * notifie les canaux(proxy)
+     * */
     @Override
     public void notifyObservateurs() {
-
-
+        for (ObserverDeCapteurAsync obs : this.canaux) {
+            obs.update(this);
+        }
     }
+
 }

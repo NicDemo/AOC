@@ -10,7 +10,6 @@ import capteur.Capteur;
  * - Chaque observateur possède une suite de valeurs identique aux autres observateur.
  * - Les valeurs sont donc strictement croissantes.
  * - L'ensemble de valeurs de chaque observateur est un sous-ensemble des valeurs du sujet (Capteur)
- * @author Sean Little et Guillaume Fourniols
  */
 public class DiffusionSequentielle  implements AlgoDiffusion{
 
