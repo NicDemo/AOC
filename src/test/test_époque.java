@@ -15,6 +15,7 @@ import java.sql.Time;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Logger;
 
 import static org.junit.Assert.assertTrue;
 
@@ -57,6 +58,7 @@ public class test_époque {
     public void clean_up() throws InterruptedException {
         scheduler.awaitTermination(5, TimeUnit.SECONDS);
         scheduler.shutdown();
+
     }
 
     @Test
@@ -67,17 +69,39 @@ public class test_époque {
         Boolean isSorted2 = Utilitaires.isSorted(afficheur2.getReceivedValues());
         Boolean isSorted3 = Utilitaires.isSorted(afficheur3.getReceivedValues());
         Boolean isSorted4 = Utilitaires.isSorted(afficheur4.getReceivedValues());
-                for(int i = 0 ;i< afficheur1.getNumberOfValues();i++){
-            System.out.println(afficheur1.getReceivedValues().get(i)+ " ,");
-            System.out.println(afficheur2.getReceivedValues().get(i)+ " ,");
-            System.out.println(afficheur3.getReceivedValues().get(i)+ " ,");
-            System.out.println(afficheur4.getReceivedValues().get(i)+ " ,");
-        }
-     //   assertTrue(isSorted1);
-       // assertTrue(isSorted2);
-       // assertTrue(isSorted3);
-        //assertTrue(isSorted4);
 
+        show_afficheur();
+         assertTrue(isSorted1);
+         assertTrue(isSorted2);
+         assertTrue(isSorted3);
+         assertTrue(isSorted4);
     }
+     void  show_afficheur(){
+        Logger.getGlobal().info("Résultats test : \n Afficheur 1 : ");
+        for(int i = 0 ;i< afficheur1.getNumberOfValues();i++){
+            System.out.print(afficheur1.getReceivedValues().get(i)+ " , ");
+
+        }
+         System.out.println();
+        Logger.getGlobal().info(" Afficheur 2 : ");
+        for(int i = 0 ;i< afficheur2.getNumberOfValues();i++){
+            System.out.print(afficheur2.getReceivedValues().get(i)+ " ,");
+        }
+         System.out.println();
+        Logger.getGlobal().info(" Afficheur 3 : ");
+
+        for(int i = 0 ;i< afficheur3.getNumberOfValues();i++){
+            System.out.print(afficheur3.getReceivedValues().get(i)+ " ,");
+        }
+         System.out.println();
+        Logger.getGlobal().info(" Afficheur 4 : ");
+
+        for(int i = 0 ;i< afficheur4.getNumberOfValues();i++){
+            System.out.print(afficheur4.getReceivedValues().get(i)+ " ,");
+        }
+         System.out.println();
+        Logger.getGlobal().info(" Fin resultats");
+    }
+
 }
 

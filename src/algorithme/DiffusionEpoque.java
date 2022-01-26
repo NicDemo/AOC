@@ -8,7 +8,9 @@ public class DiffusionEpoque implements  AlgoDiffusion{
     @Override
     public void execute() throws InterruptedException {
     if(isConfig){
+        this.capteur.saveValue();
         this.capteur.notifyObservateurs();
+
     }
     else{throw  new InterruptedException("start non config");}
     }
