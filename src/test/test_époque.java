@@ -3,15 +3,12 @@ package test;
 import afficheur.Afficheur;
 import algorithme.AlgoDiffusion;
 import algorithme.DiffusionEpoque;
-import algorithme.DiffusionSequentielle;
 import canal.Canal;
 import capteur.CapteurImpl;
 import org.junit.After;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-import java.sql.Time;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;

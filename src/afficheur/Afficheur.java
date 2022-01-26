@@ -27,9 +27,6 @@ public class Afficheur implements ObserverDeCapteur {
               receivedValues.add(a);
               currentMaxValue=a;
           }
-          else{
-              //System.out.println("date de péremption dépassé");
-          }
       }
       catch (Exception e){e.printStackTrace();}
 

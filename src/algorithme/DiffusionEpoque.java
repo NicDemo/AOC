@@ -2,6 +2,12 @@ package algorithme;
 
 import capteur.Capteur;
 
+/** @Author Nicolas Demongeot Paul Borie
+ *  Strategy de diffusion par époque
+ *  les afficheurs ne prennent en compte que les valeurs qu'ils reçoivent seulement si la valeur reçu est supérieur a toutes celles déjà reçu.
+ *  (le comportement est directement traité dans les afficheurs)
+ *
+ */
 public class DiffusionEpoque implements  AlgoDiffusion{
     Capteur capteur;
     Boolean isConfig=false;
@@ -12,7 +18,7 @@ public class DiffusionEpoque implements  AlgoDiffusion{
         this.capteur.notifyObservateurs();
 
     }
-    else{throw  new InterruptedException("start non config");}
+    else{throw  new InterruptedException("strategy not configured");}
     }
 
     @Override

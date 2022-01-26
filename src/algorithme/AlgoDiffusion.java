@@ -2,15 +2,14 @@ package algorithme;
 
 import capteur.Capteur;
 
+/**
+ * @Author  Nicolas demongeot Paul Borie
+ */
 public interface AlgoDiffusion {
 
     /**
      * Sert à définir l'état du système lors de l'execution des algorithmes de diffusion*
      */
-    public enum SystemState {
-        READ, WRITE;
-    }
-
     /**
      * Execute l'algorithme de diffusion.
      * Appeler l'éxécution de l'algorithme avant de l'avoir configuré avec la fonction prévue à cet effet

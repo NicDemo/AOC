@@ -48,11 +48,11 @@ public class CapteurImpl implements Capteur {
             e.printStackTrace();
         }
     }
-
     @Override
     public void unlock(int n) {
         this.algoDiffusion.unlock(n);
     }
+
 
     @Override
     public void saveValue() {
@@ -64,10 +64,6 @@ public class CapteurImpl implements Capteur {
         return this.canaux;
     }
 
-    /**
-     *
-     * notifie les canaux(proxy)
-     * */
     @Override
     public void notifyObservateurs() {
         for (ObserverDeCapteurAsync obs : this.canaux) {

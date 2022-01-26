@@ -6,7 +6,6 @@ import algorithme.DiffusionAtomic;
 import canal.Canal;
 import capteur.CapteurImpl;
 import org.junit.After;
-import org.junit.Assert;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

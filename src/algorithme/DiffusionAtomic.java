@@ -3,7 +3,11 @@ package algorithme;
 import capteur.Capteur;
 
 import java.util.concurrent.Semaphore;
-
+/** @Author Nicolas Demongeot Paul Borie
+ *  Strategy de diffusion atomique
+ *  Reader/Writer
+ *  les Afficheurs bloquent le processus tant qu'ils n'ont pas tous lus la valeur via les semaphores.
+ */
 public class DiffusionAtomic implements  AlgoDiffusion{
     private Capteur capteur;
     private Semaphore semaphore;

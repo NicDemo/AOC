@@ -2,7 +2,7 @@ package test;
 
 import java.util.Iterator;
 /**Class Utilitaire pour les test
- *
+ * @Author  Nicolas Demongeot Paul Borie
  * */
     public class Utilitaires {
         /**Vérifie qu'un itérable est rangé en ordre croissant strict
