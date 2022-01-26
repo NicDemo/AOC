@@ -1,8 +1,13 @@
 package test;
 
 import java.util.Iterator;
-
+/**Class Utilitaire pour les test
+ *
+ * */
     public class Utilitaires {
+        /**Vérifie qu'un itérable est rangé en ordre croissant strict
+         *
+         * */
         public static <T extends Comparable<? super T>>
         boolean isSorted(Iterable<T> iterable) {
             Iterator<T> iter = iterable.iterator();
