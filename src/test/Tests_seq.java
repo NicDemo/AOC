@@ -65,8 +65,6 @@ public class Tests_seq {
     @Test
     @DisplayName("Valeur lus afficheurs égales")
     public void Test_equality() throws InterruptedException {
-
-        System.out.println(afficheur1.getNumberOfValues());
       /*  for(int i = 0 ;i< afficheur1.getNumberOfValues();i++){
             System.out.println(afficheur1.getReceivedValues().get(i)+ " ,");
             System.out.println(afficheur2.getReceivedValues().get(i)+ " ,");
