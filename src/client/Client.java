@@ -1,6 +1,6 @@
 package client;
 
-import afficheur.Afficheur;
+import  afficheur.Afficheur;
 import algorithme.AlgoDiffusion;
 import algorithme.DiffusionSequentielle;
 import canal.Canal;
@@ -40,9 +40,12 @@ public class Client {
         for(int i = 0; i<iterations;i++) {
             capteur.tick();
             System.out.println("ça run "+i);
-            Thread.sleep(500);
+            Thread.sleep(200);
         }
-
+        for(int i = 0 ;i< afficheur1.getNumberOfValues();i++){
+            System.out.println(afficheur1.getReceivedValues().get(i)+ " ,");
+            System.out.println(afficheur2.getReceivedValues().get(i)+ " ,");
+        }
 
         scheduler.awaitTermination(10, TimeUnit.SECONDS);
         scheduler.shutdown();
