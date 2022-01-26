@@ -36,11 +36,11 @@ public class Client {
 
         strategy.configure(capteur, 4);
 
-        int iterations = 20;
+        int iterations = 30;
         for(int i = 0; i<iterations;i++) {
             capteur.tick();
             System.out.println("ça run "+i);
-            Thread.sleep(200);
+            Thread.sleep(500);
         }
         for(int i = 0 ;i< afficheur1.getNumberOfValues();i++){
             System.out.println(afficheur1.getReceivedValues().get(i)+ " ,");
