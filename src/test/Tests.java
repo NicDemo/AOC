@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -19,15 +20,18 @@ import algorithme.DiffusionSequentielle;
 import canal.Canal;
 import capteur.CapteurImpl;
 
+
+
 import static org.junit.Assert.*;
 
-public class Tests {
+public class Tests  {
     public ScheduledExecutorService scheduler ;
     public AlgoDiffusion strategy;
     public CapteurImpl capteur;//= new CapteurImpl(strategy);
     public Canal canal1,canal2,canal3,canal4;
     public Afficheur afficheur1,afficheur2,afficheur3,afficheur4;
     public int iterations = 30;
+    public int canaux = 4;
     @BeforeEach
     public void Init() {
         afficheur1=new Afficheur();
@@ -38,7 +42,7 @@ public class Tests {
         this.scheduler = Executors.newScheduledThreadPool(50);
         this.strategy = new DiffusionSequentielle();
         this.capteur = new CapteurImpl(strategy);
-        this.strategy.configure(capteur, 4);
+        this.strategy.configure(capteur, canaux);
 
         this.canal1= new Canal(scheduler, afficheur1);
         this.canal2=new Canal(scheduler, afficheur2);
@@ -50,20 +54,17 @@ public class Tests {
         capteur.attach(canal4);
 
     }
-    /*@After
+    @After
     void clean_up() throws InterruptedException {
-        scheduler.awaitTermination(10, TimeUnit.SECONDS);
         scheduler.shutdown();
-    }*/
+    }
 
     @Test
     @DisplayName("test egalité")
     public void Test_equality() throws InterruptedException {
-    // assertEquals(afficheur1,afficheur4);
         for(int i = 0; i<iterations;i++) {
             capteur.tick();
             Thread.sleep(500);
-
         }
         Thread.sleep(500);
         System.out.println(afficheur1.getNumberOfValues());
@@ -74,10 +75,26 @@ public class Tests {
             System.out.println(afficheur4.getReceivedValues().get(i)+ " ,");
         }*/
         Assertions.assertEquals(afficheur1.getReceivedValues(),afficheur2.getReceivedValues());
-        assertEquals(afficheur3.getNumberOfValues(),afficheur4.getNumberOfValues());
-        Assertions.assertEquals(afficheur3.getReceivedValues().size(),afficheur4.getReceivedValues().size());
+        Assertions.assertEquals(afficheur2.getReceivedValues(),afficheur3.getReceivedValues());
+        Assertions.assertEquals(afficheur3.getReceivedValues(),afficheur4.getReceivedValues());
     }
 
+    @Test
+    @DisplayName("croissance")
+    public void croissance_seq() throws InterruptedException {
+        for(int i = 0; i<iterations;i++) {
+            capteur.tick();
+            Thread.sleep(300);
+        }
+        Boolean isSorted1 = Utilitaires.isSorted(afficheur1.getReceivedValues());
+        Boolean isSorted2 = Utilitaires.isSorted(afficheur2.getReceivedValues());
+        Boolean isSorted3 = Utilitaires.isSorted(afficheur3.getReceivedValues());
+        Boolean isSorted4 = Utilitaires.isSorted(afficheur4.getReceivedValues());
+        assertTrue(isSorted1);
+        assertTrue(isSorted2);
+        assertTrue(isSorted3);
+        assertTrue(isSorted4);
+    }
 
 
 }
