@@ -15,7 +15,9 @@ import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
 import static org.junit.Assert.assertTrue;
-
+/**Test strategy époque
+ *
+ * */
 public class test_époque {
     public ScheduledExecutorService scheduler;
     public AlgoDiffusion strategy;

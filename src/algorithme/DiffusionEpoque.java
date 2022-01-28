@@ -2,11 +2,12 @@ package algorithme;
 
 import capteur.Capteur;
 
-/** @Author Nicolas Demongeot Paul Borie
- *  Strategy de diffusion par époque
- *  les afficheurs ne prennent en compte que les valeurs qu'ils reçoivent seulement si la valeur reçu est supérieur a toutes celles déjà reçu.
- *  (le comportement est directement traité dans les afficheurs)
- *
+
+/**Concrete Algorithm dans le cadre du pattern Strategy.
+ * Strategy de diffusion par époque
+ * les afficheurs ne prennent en compte que les valeurs qu'ils reçoivent seulement si la valeur reçu est supérieur a toutes celles déjà reçu.
+ * (le comportement est directement traité dans les afficheurs)
+ * @Author Nicolas Demongeot Paul Borie jean derieux
  */
 public class DiffusionEpoque implements  AlgoDiffusion{
     Capteur capteur;

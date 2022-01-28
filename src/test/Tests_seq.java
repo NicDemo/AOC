@@ -20,7 +20,9 @@ import capteur.CapteurImpl;
 
 
 import static org.junit.Assert.*;
-
+/**Test strategy sequentielle
+ *
+ * */
 public class Tests_seq {
     public ScheduledExecutorService scheduler ;
     public AlgoDiffusion strategy;
@@ -62,12 +64,6 @@ public class Tests_seq {
     @Test
     @DisplayName("Valeur lus afficheurs égales")
     public void Test_equality() throws InterruptedException {
-      /*  for(int i = 0 ;i< afficheur1.getNumberOfValues();i++){
-            System.out.println(afficheur1.getReceivedValues().get(i)+ " ,");
-            System.out.println(afficheur2.getReceivedValues().get(i)+ " ,");
-            System.out.println(afficheur3.getReceivedValues().get(i)+ " ,");
-            System.out.println(afficheur4.getReceivedValues().get(i)+ " ,");
-        }*/
         Assertions.assertEquals(afficheur1.getReceivedValues(),afficheur2.getReceivedValues());
         Assertions.assertEquals(afficheur2.getReceivedValues(),afficheur3.getReceivedValues());
         Assertions.assertEquals(afficheur3.getReceivedValues(),afficheur4.getReceivedValues());

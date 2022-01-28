@@ -2,8 +2,9 @@ package algorithme;
 
 import capteur.Capteur;
 
-/**
+/**Interface de strategy.
  * @Author  Nicolas demongeot Paul Borie
+ *
  */
 public interface AlgoDiffusion {
 

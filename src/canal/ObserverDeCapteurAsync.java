@@ -4,8 +4,9 @@ import capteur.Capteur;
 
 import java.util.concurrent.Future;
 
-/**
+/**role du service dans le pattern active object ayant pour client le capteur.
  * @Author  Nicolas demongeot Paul Borie
+ *
  */
 public interface ObserverDeCapteurAsync {
 

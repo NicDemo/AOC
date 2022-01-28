@@ -2,8 +2,10 @@ package canal;
 
 import java.util.concurrent.Future;
 
-/**
- * @Author Nicolas Demongeot Paul Borie
+/** role du Service dans le pattern active object ayant pour client Observer de capteur
+ * @Author Nicolas Demongeot Paul Borie Jean Derieux
+ *
+ *
  */
 public interface CapteurAsync {
     /**

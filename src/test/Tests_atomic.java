@@ -18,7 +18,9 @@ import java.util.logging.Logger;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-
+/**Test strategy atomique
+ *
+ * */
 public class Tests_atomic {
 
 

@@ -6,7 +6,8 @@ import capteur.Capteur;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**Le capteur, a chaque appelle de tick() tentative d'emission de la valeur du capteur.
+ * */
 public class CapteurImpl implements Capteur {
 
     private final static int START_VALUE = 1;

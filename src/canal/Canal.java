@@ -6,6 +6,10 @@ import capteur.Capteur;
 import java.util.concurrent.Future;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+/**
+ * Proxy des pattern active object.
+ * fais le lien entre l'afficheur et le capteur, enqueue les Method invocation(methode anonyme ici) dans le scheduler.
+ * */
 
 public class Canal implements CapteurAsync, ObserverDeCapteurAsync {
 

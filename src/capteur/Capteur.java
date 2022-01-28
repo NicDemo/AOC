@@ -4,7 +4,7 @@ import canal.ObserverDeCapteurAsync;
 
 import java.util.List;
 
-/**
+/**Interface du capteur client d'un pattern active object et a la fois concrete servant du second.
  * @Author Nicolas Demongeot Paul Borie
  *
  */
