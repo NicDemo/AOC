@@ -2,6 +2,9 @@ package test;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+import java.util.logging.Logger;
+
 import org.junit.After;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -82,8 +85,36 @@ public class Tests_seq {
         assertTrue(isSorted2);
         assertTrue(isSorted3);
         assertTrue(isSorted4);
-    }
+        scheduler.awaitTermination(10, TimeUnit.SECONDS);
+        show_afficheur();
 
+    }
+    void  show_afficheur(){
+        Logger.getGlobal().info("Résultats test : \n Afficheur 1 : ");
+        for(int i = 0 ;i< afficheur1.getNumberOfValues();i++){
+            System.out.print(afficheur1.getReceivedValues().get(i)+ " , ");
+
+        }
+        System.out.println();
+        Logger.getGlobal().info(" Afficheur 2 : ");
+        for(int i = 0 ;i< afficheur2.getNumberOfValues();i++){
+            System.out.print(afficheur2.getReceivedValues().get(i)+ " ,");
+        }
+        System.out.println();
+        Logger.getGlobal().info(" Afficheur 3 : ");
+
+        for(int i = 0 ;i< afficheur3.getNumberOfValues();i++){
+            System.out.print(afficheur3.getReceivedValues().get(i)+ " ,");
+        }
+        System.out.println();
+        Logger.getGlobal().info(" Afficheur 4 : ");
+
+        for(int i = 0 ;i< afficheur4.getNumberOfValues();i++){
+            System.out.print(afficheur4.getReceivedValues().get(i)+ " ,");
+        }
+        System.out.println();
+        Logger.getGlobal().info(" Fin resultats");
+    }
 
 
 }

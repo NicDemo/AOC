@@ -14,6 +14,7 @@ import org.junit.jupiter.api.Test;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Logger;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -87,12 +88,33 @@ public class Tests_atomic {
             assertEquals(iterations-1, afficheur2.getNumberOfValues());
             assertEquals(iterations-1, afficheur3.getNumberOfValues());
             assertEquals(iterations-1, afficheur4.getNumberOfValues());
-              for(int i = 0 ;i< afficheur1.getNumberOfValues();i++){
-            System.out.println(afficheur1.getReceivedValues().get(i)+ " ,");
-            System.out.println(afficheur2.getReceivedValues().get(i)+ " ,");
-            System.out.println(afficheur3.getReceivedValues().get(i)+ " ,");
-            System.out.println(afficheur4.getReceivedValues().get(i)+ " ,");
+            show_afficheur();
         }
+        void  show_afficheur(){
+            Logger.getGlobal().info("Résultats test : \n Afficheur 1 : ");
+            for(int i = 0 ;i< afficheur1.getNumberOfValues();i++){
+                System.out.print(afficheur1.getReceivedValues().get(i)+ " , ");
+
+            }
+            System.out.println();
+            Logger.getGlobal().info(" Afficheur 2 : ");
+            for(int i = 0 ;i< afficheur2.getNumberOfValues();i++){
+                System.out.print(afficheur2.getReceivedValues().get(i)+ " ,");
+            }
+            System.out.println();
+            Logger.getGlobal().info(" Afficheur 3 : ");
+
+            for(int i = 0 ;i< afficheur3.getNumberOfValues();i++){
+                System.out.print(afficheur3.getReceivedValues().get(i)+ " ,");
+            }
+            System.out.println();
+            Logger.getGlobal().info(" Afficheur 4 : ");
+
+            for(int i = 0 ;i< afficheur4.getNumberOfValues();i++){
+                System.out.print(afficheur4.getReceivedValues().get(i)+ " ,");
+            }
+            System.out.println();
+            Logger.getGlobal().info(" Fin resultats");
         }
 
 
