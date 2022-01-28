@@ -6,6 +6,7 @@ import java.util.List;
 
 /**
  * @Author Nicolas Demongeot Paul Borie
+ *
  */
 public interface Capteur {
 
