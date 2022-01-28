@@ -1,187 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3f143b9-d926-4441-85a5-8c58715ee7e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/aoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/afficheur/Afficheur.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/afficheur/ObserverDeCapteur.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/afficheur/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/afficheur/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/algorithme/AlgoDiffusion.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/algorithme/DiffusionAtomic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/algorithme/DiffusionEpoque.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/algorithme/DiffusionSequentielle.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/algorithme/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/algorithme/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/allclasses-index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/allclasses.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/allpackages-index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/canal/Canal.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/canal/CapteurAsync.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/canal/ObserverDeCapteurAsync.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/canal/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/canal/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/capteur/Capteur.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/capteur/CapteurImpl.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/capteur/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/capteur/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/client/Client.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/client/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/client/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/constant-values.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/deprecated-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/element-list" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/help-doc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-11.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-12.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-13.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-14.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/jquery/external/jquery/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/jquery/images/ui-bg_glass_55_fbf9ee_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/jquery/images/ui-bg_glass_65_dadada_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/jquery/images/ui-bg_glass_75_dadada_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/jquery/images/ui-bg_glass_75_e6e6e6_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/jquery/images/ui-bg_glass_95_fef1ec_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/jquery/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/jquery/images/ui-icons_222222_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/jquery/images/ui-icons_2e83ff_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/jquery/images/ui-icons_454545_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/jquery/images/ui-icons_888888_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/jquery/images/ui-icons_cd0a0a_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/jquery/jquery-3.5.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/jquery/jquery-ui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/jquery/jquery-ui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/jquery/jquery-ui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/jquery/jquery-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/jquery/jquery-ui.structure.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/jquery/jquery-ui.structure.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/jquery/jszip-utils/dist/jszip-utils-ie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/jquery/jszip-utils/dist/jszip-utils-ie.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/jquery/jszip-utils/dist/jszip-utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/jquery/jszip-utils/dist/jszip-utils.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/jquery/jszip/dist/jszip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/jquery/jszip/dist/jszip.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/member-search-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/member-search-index.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/overview-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/overview-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/package-search-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/package-search-index.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/resources/glass.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/resources/x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/stylesheet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/test/Tests_atomic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/test/Tests_seq.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/test/Utilitaires.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/test/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/test/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/test/test_époque.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/type-search-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javadoc/type-search-index.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/afficheur/Afficheur.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/afficheur/ObserverDeCapteur.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/afficheur/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/afficheur/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/algorithme/AlgoDiffusion.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/algorithme/DiffusionAtomic.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/algorithme/DiffusionEpoque.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/algorithme/DiffusionSequentielle.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/algorithme/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/algorithme/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/allclasses-index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/allclasses.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/allpackages-index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/canal/Canal.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/canal/CapteurAsync.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/canal/ObserverDeCapteurAsync.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/canal/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/canal/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/capteur/Capteur.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/capteur/CapteurImpl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/capteur/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/capteur/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/client/Client.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/client/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/client/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/constant-values.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/deprecated-list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/element-list" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/help-doc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-10.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-11.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-12.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-13.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-14.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-6.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-7.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-8.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index-files/index-9.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/jquery/external/jquery/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/jquery/images/ui-bg_glass_55_fbf9ee_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/jquery/images/ui-bg_glass_65_dadada_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/jquery/images/ui-bg_glass_75_dadada_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/jquery/images/ui-bg_glass_75_e6e6e6_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/jquery/images/ui-bg_glass_95_fef1ec_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/jquery/images/ui-bg_highlight-soft_75_cccccc_1x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/jquery/images/ui-icons_222222_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/jquery/images/ui-icons_2e83ff_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/jquery/images/ui-icons_454545_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/jquery/images/ui-icons_888888_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/jquery/images/ui-icons_cd0a0a_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/jquery/jquery-3.5.1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/jquery/jquery-ui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/jquery/jquery-ui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/jquery/jquery-ui.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/jquery/jquery-ui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/jquery/jquery-ui.structure.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/jquery/jquery-ui.structure.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/jquery/jszip-utils/dist/jszip-utils-ie.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/jquery/jszip-utils/dist/jszip-utils-ie.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/jquery/jszip-utils/dist/jszip-utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/jquery/jszip-utils/dist/jszip-utils.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/jquery/jszip/dist/jszip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/jquery/jszip/dist/jszip.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/member-search-index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/member-search-index.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/overview-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/overview-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/package-search-index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/package-search-index.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/resources/glass.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/resources/x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/search.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/stylesheet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/test/Tests_atomic.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/test/Tests_seq.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/test/Utilitaires.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/test/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/test/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/test/test_époque.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/type-search-index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/type-search-index.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/Client.java" afterDir="false" />
-    </list>
+    <list default="true" id="b3f143b9-d926-4441-85a5-8c58715ee7e8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -200,6 +20,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -214,6 +37,7 @@
       <workItem from="1643131430498" duration="66000" />
       <workItem from="1643131728294" duration="14000" />
       <workItem from="1643390693497" duration="61000" />
+      <workItem from="1643390940656" duration="613000" />
     </task>
     <servers />
   </component>
